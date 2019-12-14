@@ -19,6 +19,6 @@ public class Circle extends DataAbstraction {
     @Override
     public String toString() {
         return "Circle color is " + super.color +
-                "and area is : " + area();
+                " and area is : " + area();
     }
 }

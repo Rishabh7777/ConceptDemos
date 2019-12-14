@@ -20,6 +20,6 @@ public class Rectangle extends DataAbstraction {
     @Override
     public String toString() {
         return "Rectangle color is " + super.color +
-                "and area is : " + area();
+                " and area is : " + area();
     }
 }
