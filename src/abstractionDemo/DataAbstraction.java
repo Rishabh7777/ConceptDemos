@@ -1,10 +1,10 @@
 package abstractionDemo;
 
 public abstract class DataAbstraction {
-    private String color;
+    String color;
 
     // abstract class can have constructor
-    public DataAbstraction(String color) {
+    DataAbstraction(String color) {
         System.out.println("Shape constructor called");
         this.color = color;
     }
