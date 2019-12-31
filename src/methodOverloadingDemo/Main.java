@@ -1,5 +1,7 @@
 package methodOverloadingDemo;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,5 +10,12 @@ public class Main {
 
         // printing output result by calling method
         System.out.println(obj.calcFeetAndInchesToCentimeters());
+
+        // taking user input
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter foot: ");
+        double feet = scan.nextDouble();
+        System.out.print("Enter inch: ");
+        double inches = scan.nextDouble();
     }
 }
