@@ -10,4 +10,9 @@ public class ConversionToCentimeters {
         this.feet = feet;
         this.inches = inches;
     }
+
+    // method to convert feet and inches to centimeters
+    public double calcFeetAndInchesToCentimeters(double feet, double inches) {
+        return ((feet * 12) * 2.54) + (inches * 2.54);
+    }
 }
