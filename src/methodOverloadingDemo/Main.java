@@ -17,5 +17,8 @@ public class Main {
         double feet = scan.nextDouble();
         System.out.print("Enter inch: ");
         double inches = scan.nextDouble();
+
+        // calling method with parameters
+        System.out.println(obj.calcFeetAndInchesToCentimeters(feet, inches));
     }
 }
