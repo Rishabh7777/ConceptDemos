@@ -20,5 +20,6 @@ public class Main {
 
         // calling method with parameters
         System.out.println(obj.calcFeetAndInchesToCentimeters(feet, inches));
+        System.out.println(obj.calcFeetAndInchesToCentimeters(inches));
     }
 }
