@@ -17,7 +17,7 @@ public class ConversionToCentimeters {
     }
 
     // overloading calcFeetAndInchesToCentimeters()
-    public double calcFeetAndInchesToCentimeters(double inches) {
+    public double calcFeetAndInchesToCentimeters() {
         return inches * 2.54;
     }
 }
