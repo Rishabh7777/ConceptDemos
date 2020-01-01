@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         // creating object of class and using its constructor
-        ConversionToCentimeters obj = new ConversionToCentimeters(1, 1);
+        ConversionToCentimeters obj = new ConversionToCentimeters(4, 89);
 
         // printing output result by calling method
         System.out.println(obj.calcFeetAndInchesToCentimeters());
