@@ -7,9 +7,12 @@ public class Main {
 
         // creating object of class and using its constructor
         ConversionToCentimeters obj = new ConversionToCentimeters(4, 3);
-
-        // printing output result by calling method
-        System.out.println(obj.calcFeetAndInchesToCentimeters());
+        double centimeters3 = obj.calcFeetAndInchesToCentimeters();
+        if (centimeters3 < 0.0) {
+            System.out.println("Invalid input");
+        } else {
+            System.out.println(centimeters3);
+        }
 
         // taking user input
         Scanner scan = new Scanner(System.in);
