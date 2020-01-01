@@ -34,8 +34,10 @@ public class ConversionToCentimeters {
     // 3rd method, second overloaded
     public double calcFeetAndInchesToCentimeters(double inches3) {
         if (inches3 >= 0) {
-            double feet3 = inches3 / 12;
+            double feet3 = (int) inches3 / 12;
             double remainingInches = inches3 % 12;
+//            System.out.println(feet3 + "\t" + remainingInches);
+            // calling first overloaded method
             return calcFeetAndInchesToCentimeters(feet3, remainingInches);
         } else {
             return -1;

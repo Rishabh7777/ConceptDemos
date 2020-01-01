@@ -31,11 +31,13 @@ public class Main {
         }
 
         // calling second overloaded method
-        double centimeters3 = obj.calcFeetAndInchesToCentimeters(inches);
+        System.out.print("Enter inches: ");
+        double inches2 = scan.nextDouble();
+        double centimeters3 = obj.calcFeetAndInchesToCentimeters(inches2);
         if (centimeters3 < 0.0) {
             System.out.println("Invalid input");
         } else {
-            System.out.println(inches + " inches = " + centimeters3 + " cm");
+            System.out.println(inches2 + " inches = " + centimeters3 + " cm");
         }
     }
 }
