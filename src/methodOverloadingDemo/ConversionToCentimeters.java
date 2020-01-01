@@ -13,7 +13,7 @@ public class ConversionToCentimeters {
 
     // method to convert feet and inches to centimeters
     public double calcFeetAndInchesToCentimeters(double feet, double inches) {
-        if (feet >= 0 && inches >= 0 && inches <= 12) {
+        if (feet >= 0 && inches >= 0 && inches < 12) {
             return ((feet * 12) * 2.54) + (inches * 2.54);
         } else {
             return -1;
@@ -22,8 +22,10 @@ public class ConversionToCentimeters {
 
     // overloading calcFeetAndInchesToCentimeters()
     public double calcFeetAndInchesToCentimeters(double inches) {
-        if (feet >= 0 && inches >= 0 && inches <= 12) {
-            return inches * 2.54;
+        if (inches >= 0) {
+            feet = inches / 12;
+            double remainingInches = inches % 12;
+            return calcFeetAndInchesToCentimeters(feet, remainingInches);
         } else {
             return -1;
         }
