@@ -42,6 +42,7 @@ public class CalculateCentimeters {
         if (inches2 >= 0) {
             double feet2 = inches2 / 12;
             double remainingInches = inches2 % 12;
+            // calling main method in overloaded one
             return calcFeetAndInchesToCentimeters(feet2, remainingInches);
         } else {
             return -1;
