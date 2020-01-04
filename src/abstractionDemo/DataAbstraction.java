@@ -14,6 +14,7 @@ public abstract class DataAbstraction {
 
     public abstract String toString();
 
+    // this is a concrete method
     public String getColor() {
         return color;
     }
