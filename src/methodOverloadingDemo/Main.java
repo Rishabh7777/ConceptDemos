@@ -7,7 +7,7 @@ public class Main {
 
         // taking user input
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter feet and inches: ");
+        System.out.println("Enter feet and inches to convert: ");
         double feet = scan.nextDouble();
         double inches = scan.nextDouble();
 
@@ -17,6 +17,18 @@ public class Main {
             System.out.println("Invalid feet/inches value.");
         } else {
             System.out.println(feet + " feet " + inches + " inches = " + centimeters + " cms");
+        }
+
+        // taking input second time
+        System.out.println("Enter inches to convert: ");
+        double inches2 = scan.nextDouble();
+
+        // calling method with one parameter
+        double centimeters2 = CalculateCentimeters.calcFeetAndInchesToCentimeters(inches);
+        if (centimeters < 0) {
+            System.out.println("Invalid inches value.");
+        } else {
+            System.out.println(inches2 + " inches = " + centimeters2 + " cms");
         }
     }
 }
