@@ -28,4 +28,8 @@ public class CalculateCentimeters {
         this.inches = inches;
     }
 
+    // method to calculate centimeters from feet and inches
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
+        return (((feet * 12) * 2.54) + (inches * 2.54));
+    }
 }
