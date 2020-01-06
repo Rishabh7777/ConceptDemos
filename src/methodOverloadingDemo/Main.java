@@ -11,8 +11,10 @@ public class Main {
         double feet = scan.nextDouble();
         double inches = scan.nextDouble();
 
+        CalculateCentimeters obj = new CalculateCentimeters(45, 10);
+
         // calling method with two parameters
-        double centimeters = CalculateCentimeters.calcFeetAndInchesToCentimeters(feet, inches);
+        double centimeters = obj.calcFeetAndInchesToCentimeters(feet, inches);
         if (centimeters < 0) {
             System.out.println("Invalid feet/inches value.");
         } else {
@@ -24,7 +26,7 @@ public class Main {
         double inches2 = scan.nextDouble();
 
         // calling method with one parameter
-        double centimeters2 = CalculateCentimeters.calcFeetAndInchesToCentimeters(inches);
+        double centimeters2 = obj.calcFeetAndInchesToCentimeters(inches);
         if (centimeters < 0) {
             System.out.println("Invalid inches value.");
         } else {
@@ -32,7 +34,6 @@ public class Main {
         }
 
         // calling method which used constructor
-        CalculateCentimeters obj = new CalculateCentimeters(45, 10);
-        System.out.println(obj.calcFeetAndInchesToCentimeters());
+        System.out.println(obj.calcFeetAndInchesToCentimeters(2));
     }
 }
