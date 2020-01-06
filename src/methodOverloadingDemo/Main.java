@@ -30,5 +30,9 @@ public class Main {
         } else {
             System.out.println(inches2 + " inches = " + centimeters2 + " cms");
         }
+
+        // calling method which used constructor
+        CalculateCentimeters obj = new CalculateCentimeters(45, 10);
+        System.out.println(obj.calcFeetAndInchesToCentimeters());
     }
 }
