@@ -11,22 +11,22 @@ public class CalculateCentimeters {
         this.inches = inches;
     }
 
-    // getters and setters
-//    public double getFeet() {
-//        return feet;
-//    }
-//
-//    public void setFeet(double feet) {
-//        this.feet = feet;
-//    }
-//
-//    public double getInches() {
-//        return inches;
-//    }
-//
-//    public void setInches(double inches) {
-//        this.inches = inches;
-//    }
+    //getters and setters
+    public double getFeet() {
+        return feet;
+    }
+
+    public void setFeet(double feet) {
+        this.feet = feet;
+    }
+
+    public double getInches() {
+        return inches;
+    }
+
+    public void setInches(double inches) {
+        this.inches = inches;
+    }
 
     // method to calculate centimeters from feet and inches
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
@@ -54,6 +54,6 @@ public class CalculateCentimeters {
     // method using constructor
     // this method should not be static as it needs to create object
     public double calcFeetAndInchesToCentimeters() {
-        return calcFeetAndInchesToCentimeters(feet, inches);
+        return calcFeetAndInchesToCentimeters(getFeet(), inches);
     }
 }
