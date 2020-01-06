@@ -42,6 +42,8 @@ public class CalculateCentimeters {
         if (inches2 >= 0) {
             double feet2 = (int) inches2 / 12;
             double remainingInches = inches2 % 12;
+            System.out.println(feet2);
+            System.out.println(remainingInches);
             // calling main method in overloaded one
             return calcFeetAndInchesToCentimeters(feet2, remainingInches);
         } else {
