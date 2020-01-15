@@ -31,7 +31,7 @@ public class UsingSwitchStatements {
                 System.out.println("D for Dog");
                 break;
 
-            case 'E':
+            case 'E': //case 'F':
                 System.out.println("E for Elephant");
                 break;
 
