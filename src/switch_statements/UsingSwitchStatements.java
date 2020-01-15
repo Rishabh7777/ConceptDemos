@@ -10,14 +10,14 @@ public class UsingSwitchStatements {
         System.out.println("Enter a alphabet in uppercase:");
         char c = scan.next().charAt(0);     // way to take char input, it takes input upto first space only
 //        String str = scan.next();       // input using next() stops at space
-        System.out.println(c);
+//        System.out.println(c);
 //        System.out.println(str);
 
         // applying switch statements
         switch (c) {
             case 'A':
                 System.out.println("A for Apple");
-                break;
+                break;  // it is used to get out of switch block when one case is executed
 
             case 'B':
                 System.out.println("B for Ball");
@@ -36,7 +36,7 @@ public class UsingSwitchStatements {
                 break;
 
             default:
-                System.out.println("Oops! I have not learnt that many");
+                System.out.println("Oops! I have not learnt that many.");
         }
     }
 }
