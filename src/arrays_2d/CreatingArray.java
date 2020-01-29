@@ -33,9 +33,17 @@ public class CreatingArray {
 
         int[] arr = new int[3];
         arr[0] = 34;
-        arr[1] = 57;
-        arr[2] = 56;
+        arr[1] = 90;
+        arr[2] = 34;
 
         System.out.println(Arrays.toString(arr));   // will work
+
+        // applying linear search in arr
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 34) {
+                System.out.println("Element found at " + i + " position.");
+                break;  // due to this above line will be printed only once, otherwise twice
+            }
+        }
     }
 }
