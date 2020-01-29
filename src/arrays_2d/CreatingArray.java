@@ -57,15 +57,20 @@ public class CreatingArray {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
-        int l = 0, r = arr.length - 1;
-        while (l <= r) {
-            int m = l + (r - l) / 2;
-            if (arr[m] == 74)
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int m = start + (end - start) / 2;
+            // printing whenever element found
+            if (arr[m] == 74) {
                 System.out.println("Element present at " + m);
-            if (arr[m] < 74)
-                l = m + 1;
-            else
-                r = m - 1;
+            }
+            // otherwise just setting start and end points again and again
+            if (arr[m] < 74) {
+                start = m + 1;
+            } else {
+                end = m - 1;
+            }
         }
     }
 }
