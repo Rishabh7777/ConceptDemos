@@ -59,10 +59,11 @@ public class CreatingArray {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
-            int mid = start + (end - 1) / 2;
+            int mid = start + end / 2;
             // printing element whenever found
             if (arr[mid] == 34) {
                 System.out.println("Element present at " + mid);
+                break;
             }
             // otherwise just setting the start and end points again and again
             if (arr[mid] > 34) {
