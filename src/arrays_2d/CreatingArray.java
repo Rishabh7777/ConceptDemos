@@ -47,7 +47,7 @@ public class CreatingArray {
 
         // applying linear search in arr
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 34) {
+            if (arr[i] == 68) {
                 System.out.println("Element found at " + i + " position.");
                 break;  // due to this above line will be printed only once, otherwise twice
             }
@@ -55,22 +55,17 @@ public class CreatingArray {
 
         // binary searching
         Arrays.sort(arr);
-//        System.out.println(Arrays.toString(arr));
-        int start = 0;
-        int end = arr.length - 1;
-        while (start <= end) {
-            int mid = start + end / 2;
-            // printing element whenever found
-            if (arr[mid] == 34) {
-                System.out.println("Element present at " + mid);
-                break;
-            }
-            // otherwise just setting the start and end points again and again
-            if (arr[mid] > 34) {
-                end = mid - 1;
-            } else {
-                start = mid + 1;
-            }
+        System.out.println(Arrays.toString(arr));
+
+        int l = 0, r = arr.length - 1;
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            if (arr[m] == 74)
+                System.out.println("Element present at " + m);
+            if (arr[m] < 74)
+                l = m + 1;
+            else
+                r = m - 1;
         }
     }
 }
