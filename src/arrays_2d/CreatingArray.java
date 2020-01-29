@@ -31,10 +31,17 @@ public class CreatingArray {
 
         System.out.println(Arrays.toString(arr2D));   // will not work for 2D array, prints hashcode
 
-        int[] arr = new int[3];
+        int[] arr = new int[10];
         arr[0] = 34;
         arr[1] = 90;
         arr[2] = 34;
+        arr[3] = 12;
+        arr[4] = 2;
+        arr[5] = 68;
+        arr[6] = 45;
+        arr[7] = 74;
+        arr[8] = 64;
+        arr[9] = 3;
 
         System.out.println(Arrays.toString(arr));   // will work
 
@@ -43,6 +50,25 @@ public class CreatingArray {
             if (arr[i] == 34) {
                 System.out.println("Element found at " + i + " position.");
                 break;  // due to this above line will be printed only once, otherwise twice
+            }
+        }
+
+        // binary searching
+        Arrays.sort(arr);
+//        System.out.println(Arrays.toString(arr));
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int mid = start + (end - 1) / 2;
+            // printing element whenever found
+            if (arr[mid] == 34) {
+                System.out.println("Element present at " + mid);
+            }
+            // otherwise just setting the start and end points again and again
+            if (arr[mid] > 34) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
             }
         }
     }
