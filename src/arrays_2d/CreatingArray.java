@@ -1,5 +1,7 @@
 package arrays_2d;
 
+import java.util.Arrays;
+
 public class CreatingArray {
     public static void main(String[] args) {
 
@@ -26,5 +28,14 @@ public class CreatingArray {
             }
             System.out.println();
         }
+
+        System.out.println(Arrays.toString(arr2D));   // will not work for 2D array, prints hashcode
+
+        int[] arr = new int[3];
+        arr[0] = 34;
+        arr[1] = 57;
+        arr[2] = 56;
+
+        System.out.println(Arrays.toString(arr));   // will work
     }
 }
