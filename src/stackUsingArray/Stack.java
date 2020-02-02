@@ -27,4 +27,21 @@ public class Stack {
     private boolean isFull() {
         return arr.length == maxSize;
     }
+
+    // for removing element from stack
+    int pop() {
+        int response = -1;
+        if (!isEmpty()) {
+            top--;
+            response = arr[top];
+        } else {
+            System.out.println("Stack underflow");
+        }
+        return response;
+    }
+
+    // for checking if stack is empty or not
+    private boolean isEmpty() {
+        return arr.length == 0;
+    }
 }
