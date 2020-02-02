@@ -44,4 +44,15 @@ public class Stack {
     private boolean isEmpty() {
         return arr.length == 0;
     }
+
+    // for seeing the top most element of stack
+    int seek() {
+        if (isFull()) {
+            return arr[top - 1];
+        } else if (isEmpty()) {
+            return -1;
+        } else {
+            return arr[top];
+        }
+    }
 }
