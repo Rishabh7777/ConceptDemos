@@ -24,8 +24,9 @@ public class FibonacciSeries {
 
     // method to print fibonacci using recursion
     public int fibonacciNumber(int n) {
-        if (n <= 1)
+        if (n <= 1) {
             return n;
+        }
         return fibonacciNumber(n - 1) + fibonacciNumber(n - 2);
     }
 }
