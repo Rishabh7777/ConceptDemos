@@ -8,7 +8,9 @@ public class FibonacciSeries {
 
     // defining method to find fibonacci using iteration
     public void printFibonacciSeries(int element) {
-        for (int i = 0; i < element; i++) {
+        System.out.print(element1 + "\t");
+        System.out.print(element2 + "\t");
+        for (int i = 2; i < element; i++) {
             element3 = element1 + element2;
             System.out.print(element3 + "\t");
             element1 = element2;
