@@ -11,5 +11,8 @@ public class Main {
 
         FibonacciSeries obj = new FibonacciSeries();
         obj.printFibonacciSeries(element);
+        System.out.println();
+
+        System.out.println(obj.fibonacciNumber(element));
     }
 }
