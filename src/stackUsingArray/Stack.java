@@ -16,10 +16,10 @@ public class Stack {
     // for inserting new element
     void push(int element) {
         if (!isFull()) {
+            System.out.println("Stack overflow");
+        } else {
             arr[top] = element;
             top++;
-        } else {
-            System.out.println("Stack overflow");
         }
     }
 
@@ -31,11 +31,11 @@ public class Stack {
     // for removing element from stack
     int pop() {
         int response = -1;
-        if (!isEmpty()) {
-            top--;
+        if (isEmpty()) {
             response = arr[top];
+            top--;
         } else {
-            System.out.println("Stack underflow");
+            System.out.print("Stack underflow" + "\t");
         }
         return response;
     }
